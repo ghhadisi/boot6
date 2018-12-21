@@ -79,7 +79,22 @@
             <scope>provided</scope>
         </dependency>
         <!--**********************************Spring Boot 支持 JSP****************-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- servlet依赖. -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
 
+        <!-- tomcat的支持.-->
     </dependencies>
 
     <build>
