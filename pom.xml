@@ -79,7 +79,33 @@
             <scope>provided</scope>
         </dependency>
         <!--**********************************Spring Boot 支持 JSP****************-->
-
+        <!--quartz相关依赖-->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+           <!-- <version>${quartz.version}</version>-->
+        </dependency>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz-jobs</artifactId>
+<!--
+            <version>${quartz.version}</version>
+-->
+        </dependency>
+        <!--定时任务需要依赖context模块-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--spring data jpa相关-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
