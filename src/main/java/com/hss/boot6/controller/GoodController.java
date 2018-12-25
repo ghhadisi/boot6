@@ -24,4 +24,5 @@ public class GoodController
     {
         return goodInfoService.saveGood(good);
     }
+    //http://localhost:8082/good/save?name=%22aaa%22&unit=%22g%22&price=20.8
 }

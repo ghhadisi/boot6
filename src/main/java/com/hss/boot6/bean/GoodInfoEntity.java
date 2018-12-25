@@ -12,7 +12,7 @@ public class GoodInfoEntity {
      * 商品编号
      */
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "bgi_id")
     private Long id;
     /**
