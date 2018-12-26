@@ -42,3 +42,18 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+
+  rabbitmq:
+    username: guest
+    password: guest
+    #服务器ip
+    host: localhost
+    #虚拟空间地址
+    virtual-host: /
+    #端口号
+    port: 5672
+    #配置发布消息确认回调
+    publisher-confirms: true
+server:
+  port: 1111
+

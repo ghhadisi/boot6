@@ -2,6 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>rabbitmq-common</module>
+    </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -10,8 +13,8 @@
     </parent>
     <groupId>com.hss</groupId>
     <artifactId>boot6</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
     <name>boot6</name>
     <description>boot6</description>
 
@@ -79,7 +82,25 @@
             <scope>provided</scope>
         </dependency>
         <!--**********************************Spring Boot 支持 JSP****************-->
+        <!--***************lombok  getter/setter/toString等方法的编写**************************-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--***************lombok**************************-->
 
+        <!--******************rabbitmq依赖**********************-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!--******************rabbitmq依赖**********************-->
+        <!--********************jpa**************************-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--********************jpa**************************-->
     </dependencies>
 
     <build>
