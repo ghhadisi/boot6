@@ -14,11 +14,11 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @RabbitListener(queues = "user.register.queue")
-public class UserConsumer {
+public class UserConsumer2 {
     @RabbitHandler
     public void execute(Long userId)
     {
-        System.out.println("用户：【节点1】" + userId+"，完成了注册");
+        System.out.println("用户：【节点2】" + userId+"，完成了注册");
 
         //...//自行业务逻辑处理
     }

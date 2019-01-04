@@ -14,7 +14,5 @@ public enum ExchangeEnum {
         this.value = value;
     }
 
-    public String getValue() {
-        return value;
-    }
+
 }

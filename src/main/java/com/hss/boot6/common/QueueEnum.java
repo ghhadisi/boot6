@@ -23,11 +23,11 @@ public enum QueueEnum {
         this.routingKey = routingKey;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getRoutingKey() {
-        return routingKey;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public String getRoutingKey() {
+//        return routingKey;
+//    }
 }
